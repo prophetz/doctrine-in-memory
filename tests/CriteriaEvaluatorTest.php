@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Firehed\Mocktrine;
+namespace Prophetz\DoctrineInMemory;
 
 use DateTimeImmutable;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\Mapping\Driver\AttributeDriver;
-use Firehed\Mocktrine\Entities\GrabBag;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Small;
 use PHPUnit\Framework\TestCase;
+use Prophetz\DoctrineInMemory\Entities\GrabBag;
 
 #[CoversClass(CriteriaEvaluator::class)]
 #[Small]

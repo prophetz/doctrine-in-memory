@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Firehed\Mocktrine\Entities;
+namespace Prophetz\DoctrineInMemory\Entities;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping;

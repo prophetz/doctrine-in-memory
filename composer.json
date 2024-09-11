@@ -1,5 +1,5 @@
 {
-    "name": "prophetz/mocktrine",
+    "name": "prophetz/doctrine-in-memory",
     "description": "PHPUnit Doctrine mocking tools",
     "type": "library",
     "require": {
@@ -17,12 +17,12 @@
     },
     "autoload": {
       "psr-4": {
-        "Firehed\\Mocktrine\\": "src"
+        "Prophetz\\DoctrineInMemory\\": "src"
       }
     },
     "autoload-dev": {
       "psr-4": {
-        "Firehed\\Mocktrine\\": "tests"
+        "Prophetz\\DoctrineInMemory\\": "tests"
       }
     },
     "license": "MIT",

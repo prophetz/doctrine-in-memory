@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Firehed\Mocktrine;
+namespace Prophetz\DoctrineInMemory;
 
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\Exception\ORMException;

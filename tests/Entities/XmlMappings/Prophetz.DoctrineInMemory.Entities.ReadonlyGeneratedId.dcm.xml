@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
 
-    <entity name="Firehed\Mocktrine\Entities\StringId" table="string_ids">
+    <entity name="Prophetz\DoctrineInMemory\Entities\ReadonlyGeneratedId" table="readonly_generated_ids">
 
-        <id name="id" type="string" column="id">
+        <id name="id" type="int" column="id">
             <generator strategy="AUTO"/>
         </id>
 

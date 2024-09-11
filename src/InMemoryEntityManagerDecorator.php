@@ -1,6 +1,6 @@
 <?php
 
-namespace Firehed\Mocktrine;
+namespace Prophetz\DoctrineInMemory;
 
 use Doctrine\ORM\Configuration;
 use Doctrine\ORM\Decorator\EntityManagerDecorator;
