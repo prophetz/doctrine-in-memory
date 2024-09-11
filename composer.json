@@ -1,0 +1,49 @@
+{
+    "name": "prophetz/mocktrine",
+    "description": "PHPUnit Doctrine mocking tools",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "doctrine/collections": "^1.6.8 || ^2.0",
+        "doctrine/orm": "^3.2",
+        "doctrine/dbal": "^4.1",
+        "doctrine/persistence": "^1.3 || ^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-phpunit": "^1.3",
+        "phpunit/phpunit": "^10 || ^11",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Firehed\\Mocktrine\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Firehed\\Mocktrine\\": "tests"
+      }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Stern",
+            "email": "eric@ericstern.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+      "coverage": "phpunit --coverage-html .generated/codecoverage; open .generated/codecoverage/index.html",
+      "analyze": "phpstan analyse",
+      "lint": "phpcs",
+      "test": [
+        "@unit",
+        "@analyze",
+        "@lint"
+      ],
+      "unit": "phpunit"
+    }
+}
