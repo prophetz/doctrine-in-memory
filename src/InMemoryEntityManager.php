@@ -256,9 +256,7 @@ class InMemoryEntityManager implements EntityManagerInterface
     }
 
     /**
-     * Gets the metadata factory used to gather the metadata of classes.
-     *
-     * @psalm-return ClassMetadataFactory<ClassMetadata<object>>
+     * @inheritdoc
      */
     public function getMetadataFactory(): ClassMetadataFactory
     {
