@@ -159,8 +159,12 @@ class InMemoryRepository extends EntityRepository implements ObjectRepository, S
      *
      * @throws UnexpectedValueException
      */
-    public function findBy(array $criteria, array|null $orderBy = null, int|null $limit = null, int|null $offset = null): array
-    {
+    public function findBy(
+        array $criteria,
+        array|null $orderBy = null,
+        int|null $limit = null,
+        int|null $offset = null
+    ): array {
         $expr = Criteria::expr();
         $crit = Criteria::create();
         foreach ($criteria as $field => $value) {

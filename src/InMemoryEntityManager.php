@@ -81,8 +81,12 @@ class InMemoryEntityManager implements EntityManagerInterface
      *
      * @return ?Entity The found object.
      */
-    public function find(string $className, mixed $id, LockMode|int|null $lockMode = null, int|null $lockVersion = null): object|null
-    {
+    public function find(
+        string $className,
+        mixed $id,
+        LockMode|int|null $lockMode = null,
+        int|null $lockVersion = null
+    ): object|null {
         return $this->getRepository($className)->find($id);
     }
 
