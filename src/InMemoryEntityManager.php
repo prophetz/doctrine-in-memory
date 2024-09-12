@@ -244,10 +244,11 @@ class InMemoryEntityManager implements EntityManagerInterface
      * The class name must be the fully-qualified class name without a leading backslash
      * (as it is returned by get_class($obj)).
      *
-     * @template T of object
-     * @param class-string<T> $className
+     * @psalm-param class-string<T> $className
      *
-     * @return ClassMetadata<T>
+     * @psalm-return ClassMetadata<T>
+     *
+     * @template T of object
      */
     public function getClassMetadata($className): ClassMetadata
     {
@@ -257,7 +258,7 @@ class InMemoryEntityManager implements EntityManagerInterface
     /**
      * Gets the metadata factory used to gather the metadata of classes.
      *
-     * @return ClassMetadataFactory<ClassMetadata<object>>
+     * @psalm-return ClassMetadataFactory<ClassMetadata<object>>
      */
     public function getMetadataFactory(): ClassMetadataFactory
     {
