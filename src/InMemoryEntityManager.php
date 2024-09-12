@@ -280,7 +280,7 @@ class InMemoryEntityManager implements EntityManagerInterface
         throw new RuntimeException(__METHOD__ . ' not yet implemented');
     }
 
-    public function createNativeQuery($sql, ResultSetMapping $rsm): NativeQuery
+    public function createNativeQuery(string$sql, ResultSetMapping $rsm): NativeQuery
     {
         throw new RuntimeException(__METHOD__ . ' not yet implemented');
     }

@@ -58,4 +58,54 @@ class GrabBag
         $this->strField = $strField;
         $this->dateField = $dateField;
     }
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    public function isBoolField(): bool
+    {
+        return $this->boolField;
+    }
+
+    public function setBoolField(bool $boolField): void
+    {
+        $this->boolField = $boolField;
+    }
+
+    public function getFloatField(): float
+    {
+        return $this->floatField;
+    }
+
+    public function setFloatField(float $floatField): void
+    {
+        $this->floatField = $floatField;
+    }
+
+    public function getStrField(): string
+    {
+        return $this->strField;
+    }
+
+    public function setStrField(string $strField): void
+    {
+        $this->strField = $strField;
+    }
+
+    public function getDateField(): DateTimeInterface
+    {
+        return $this->dateField;
+    }
+
+    public function setDateField(DateTimeInterface $dateField): void
+    {
+        $this->dateField = $dateField;
+    }
 }
