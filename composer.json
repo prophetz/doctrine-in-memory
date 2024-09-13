@@ -37,11 +37,13 @@
     },
     "scripts": {
       "coverage": "phpunit --coverage-html .generated/codecoverage; open .generated/codecoverage/index.html",
-      "analyze": "phpstan analyse",
+      "analyze": "phpstan analyse --level max",
+      "analyze-github": "phpstan analyse --level max  --error-format=github",
+      "baseline": "phpstan analyse --generate-baseline",
       "lint": "phpcs",
       "test": [
         "@unit",
-        "@analyze",
+        "@analyze-github",
         "@lint"
       ],
       "unit": "phpunit"
