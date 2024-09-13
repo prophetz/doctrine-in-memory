@@ -14,6 +14,7 @@ use Doctrine\Common\Collections\Order;
 use Doctrine\Persistence\Mapping\ClassMetadata;
 use DomainException;
 use ReflectionClass;
+use ReflectionProperty;
 use UnexpectedValueException;
 
 use function array_filter;
@@ -46,7 +47,7 @@ class CriteriaEvaluator
     /** @var ClassMetadata<Entity> */
     private ClassMetadata $metadata;
 
-    /** @var \ReflectionProperty[] */
+    /** @var ReflectionProperty[] */
     private array $reflectionProperties;
 
     /**

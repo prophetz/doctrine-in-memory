@@ -81,4 +81,34 @@ class User
     {
         return $this->lastName;
     }
+
+    public function isActive(): bool
+    {
+        return $this->active;
+    }
+
+    public function getNotAColumn(): int
+    {
+        return $this->notAColumn;
+    }
+
+    public function setId(?int $id): void
+    {
+        $this->id = $id;
+    }
+
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
+    }
+
+    public function setLastName(string $lastName): void
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function setNotAColumn(int $notAColumn): void
+    {
+        $this->notAColumn = $notAColumn;
+    }
 }

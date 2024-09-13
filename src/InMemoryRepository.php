@@ -240,7 +240,7 @@ class InMemoryRepository extends EntityRepository implements ObjectRepository, S
      * Selectable implementation
      * {@inheritdoc}
      *
-     * @return Collection<array-key, Entity>
+     * @return AbstractLazyCollection<int, Entity>&Selectable<int, Entity>
      */
     public function matching(Criteria $criteria): AbstractLazyCollection&Selectable
     {
