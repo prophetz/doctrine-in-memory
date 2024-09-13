@@ -43,7 +43,7 @@
       "lint": "phpcs",
       "test": [
         "@unit",
-        "@analyze-github",
+        "@analyze",
         "@lint"
       ],
       "unit": "phpunit"
